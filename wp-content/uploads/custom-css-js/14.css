@@ -1,0 +1,355 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+body {
+  padding-top: 0px !important;
+}
+input[type="text"],
+select {
+  -webkit-appearance: inherit;
+  -moz-appearance: none;
+  border: 0px!important;
+  padding: 5px 15px!important;
+}
+input[type="text"]::-ms-expand,
+select::-ms-expand {
+    display: none;
+}
+.addon .nf-field-element,
+#shiftnav-toggle-main {
+  display: none;
+}
+.addon .nf-field-element.show {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    top: 30px;
+    left: 0px;
+    border: 1px solid #cbcbcb;
+    border-top: 0px;
+    z-index: 9;
+}
+#nf-field-13-container.show {
+	position: relative;
+    bottom: -80px;
+}
+#nf-field-16-container {
+  position: absolute;
+  bottom: -15px;
+  z-index: 1;
+  right: 15px;
+}
+#nf-field-16-container.show {
+  bottom: -95px;
+}
+.pick-up #nf-form-1-cont {
+  margin: auto;
+  width: 50%;
+  min-width: 400px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+#nf-form-1-cont .nf-field-container {
+  margin-bottom: 0px!important;
+  background-color: #fff;
+}
+.nf-field-container.mytotal .nf-field {
+  border: 0px;
+}
+.nf-field-container.mytotal {
+  background-color: transparent!important;
+}
+#nf-form-1-cont .nf-field-container.submit-container {
+  background-color: transparent;
+}
+#nf-form-1-cont .label-above .nf-field-label {
+  margin-bottom: 0px;
+  padding-left: 15px;
+}
+.addon .nf-field-label {
+  width: 100%;
+}
+#nf-form-1-cont .addon,
+#nf-form-1-cont .date {
+  width: 50%;
+  display: inline-block;
+  border-bottom: 1px solid #cbcbcb;
+}
+#nf-form-1-cont .date {
+  position: relative;
+  padding-left: 0px;
+  margin-left: -4px;
+}
+#nf-form-1-cont .date .nf-field {
+  padding: 2px 15px;
+}
+#nf-form-1-cont .date .nf-field-label {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+}
+.addon .nf-field-element {
+  padding-left: 15px;
+}
+#nf-form-1-cont .date .pikaday__container input[type="text"] {
+  text-align: right;
+}
+.submit-container {
+  margin-top: 50px;
+}
+.submit-container .nf-field {
+  border: 0px;
+  text-align: center;
+}
+.submit-container .submit-wrap input[type="button"] {
+  width: 100%;
+  background-color: #33c066 !important;
+  padding: 15px !important;
+  text-align: left;
+}
+.mytotal .nf-field-element p {
+  font-weight: 700;
+ /* position: absolute;
+  right: 15px;
+  bottom: 10px;*/
+  font-size: 20px;
+  color: #fff;
+}
+.nf-after-field {
+  position: fixed;
+}
+.addon .nf-field-label label:after {
+  content: "\f107";
+  font-family: DSLCFontAwesome;
+  right: 15px;
+  position: absolute;
+  bottom: 5px;
+}
+.nf-field-container:nth-child(1) .nf-field,
+.nf-field-container:nth-child(2) .nf-field {
+  border-bottom: 0px;
+}
+.nf-field {
+  padding: 5px 0px;
+  border: 1px solid #cbcbcb;
+}
+.section-top {
+  height: 500px;
+  position: relative
+}
+#dslc-content .plane .dslc-image img {
+  max-width: 400px;
+  margin: auto;
+}
+.cloud_1 {
+  position: absolute;
+  bottom: 0px;
+  right: -10%;
+  width: 120%!important;
+}
+.cloud_2 {
+  position: absolute;
+  bottom: 35px;
+  left: -10%;
+  width: 120%!important;
+  opacity: 0.5;
+}
+.sea_image,
+.road_image {
+  position: absolute;
+  top: -150px;
+  min-width: 1200px;
+}
+.road {
+  position: absolute;
+  z-index: 1;
+  top: -300px;
+}
+.cloud_1 img {
+  animation: MoveRightLeft 10s linear infinite alternate;
+  -webkit-animation: MoveRightLeft 10s linear infinite alternate;
+  -moz-animation: MoveRightLeft 10s linear infinite alternate;
+  -o-animation: MoveRightLeft 10s linear infinite alternate;
+}
+.cloud_2 img {
+  animation: MoveLeftRight 10s linear infinite alternate;
+  -webkit-animation: MoveLeftRight 10s linear infinite alternate;
+  -moz-animation: MoveLeftRight 10s linear infinite alternate;
+  -o-animation: MoveLeftRight 10s linear infinite alternate;
+}
+.plane img {
+  max-width: 400px;
+  animation: MoveUpDown 5s linear infinite;
+  -webkit-animation: MoveUpDown 5s linear infinite;
+  -moz-animation: MoveUpDown 5s linear infinite;
+  -o-animation: MoveUpDown 5s linear infinite;
+}
+.plane {
+  z-index: 9;
+}
+.logo a img {
+  max-width: 150px!important;
+  z-index: 9;
+}
+.nf-field-label label {
+    color: #cbcbcb;
+}
+.nf-response-msg {
+	background-color: #deffc2;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+.nf-response-msg p {
+	margin-bottom: 5px!important;
+}
+/* Animation */
+/* updown */
+@-webkit-keyframes MoveUpDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@-moz-keyframes MoveUpDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@-o-keyframes MoveUpDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes MoveUpDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+/* leftright */
+@-webkit-keyframes MoveLeftRight {
+    0% { left: 0;}
+    50%{ left : 5%;}
+    100%{ left: 0;}
+}
+@-moz-keyframes MoveLeftRight {
+    0% { left: 0;}
+    50%{ left : 5%;}
+    100%{ left: 0;}
+}
+@-o-keyframes MoveLeftRight {
+    0% { left: 0;}
+    50%{ left : 5%;}
+    100%{ left: 0;}
+}
+@keyframes MoveLeftRight {
+    0% { left: 0;}
+    50%{ left : 5%;}
+    100%{ left: 0;}
+}
+/* rightleft */
+@-webkit-keyframes MoveRightLeft {
+    0% { right: 0;}
+    50%{ right : 5%;}
+    100%{ right: 0;}
+}
+@-moz-keyframes MoveRightLeft {
+    0% { right: 0;}
+    50%{ right : 5%;}
+    100%{ right: 0;}
+}
+@-o-keyframes MoveRightLeft {
+    0% { right: 0;}
+    50%{ right : 5%;}
+    100%{ right: 0;}
+}
+@keyframes MoveRightLeft {
+    0% { right: 0;}
+    50%{ right : 5%;}
+    100%{ right: 0;}
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .sea_image, .road_image {
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 1800px) {
+  .sea_image, .road_image {
+    top: -350px!important;
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 1400px) {
+  .sea_image, .road_image {
+    top: -250px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 780px) {
+  #dslc-module-0d1487ead8b .dslc-text-module-content {
+    margin-top: 20px!important;
+  }
+  .pick-up #nf-form-1-cont {
+    min-width: inherit;
+	width: inherit;
+  }
+  .plane img {
+    max-width: 300px!important;
+  }
+  .date .nf-field-label {
+    padding-left: 0px!important;
+  }
+  #dslc-module-0d1487ead8b .dslc-text-module-content,
+  #dslc-module-bbd110ac16b .dslc-navigation,
+  #dslc-module-a9b06fdcdc9 .dslc-navigation {
+    text-align: center!important;
+  }
+  #dslc-module-bbd110ac16b .dslc-navigation .menu > li,
+  #dslc-module-a9b06fdcdc9 .dslc-navigation .menu > li {
+    margin-left: 20px!important;
+  }
+  #nf-form-1-cont .addon, #nf-form-1-cont .date {
+    width: 100%;
+  }
+  #nf-form-1-cont .date {
+    margin-left: 0px;
+  }
+  /*.date .nf-field {
+    border-top: 0px;
+  }*/
+}
+@media only screen and (max-width : 375px) {
+  #dslc-module-bbd110ac16b .dslc-navigation .menu > li,
+  #dslc-module-a9b06fdcdc9 .dslc-navigation .menu > li {
+    margin-left: 15px!important;
+  }
+  #dslc-module-bbd110ac16b .dslc-navigation .menu > li a,
+  #dslc-module-a9b06fdcdc9 .dslc-navigation .menu > li a {
+    font-size: 12px!important;
+  }
+}</style>
+<!-- end Simple Custom CSS and JS -->
